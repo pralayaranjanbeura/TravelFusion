@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --primary-color: #1e90ff; /* Bright Blue */
+  --secondary-color: #ff6347; /* Tomato */
+  --heading-color: #333333; /* Dark Gray */
+  --text-color: #666666; /* Medium Gray */
+  --font-name: "Poppins", sans-serif;
+  --subtitle-font-name: "Pacifico", cursive;
+  --background-color: #f0f8ff; /* Alice Blue */
+  --card-bg-color: #ffffff; /* White */
+  --border-color: #e0e0e0; /* Light Gray */
+  --hover-bg-color: #f0f0f0; /* Slight Gray for Hover Effects */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+section {
+  padding: 60px 20px; /* Increased padding for more space */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--font-name);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.primary__btn {
+  background: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.5rem 2rem !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  transition: background 0.3s ease;
+}
+
+.primary__btn:hover {
+  background: var(--secondary-color) !important;
+}
+
+.primary__btn a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.secondary__btn {
+  background: transparent !important;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 50px !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 2rem !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.secondary__btn:hover {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.secondary__btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.section__subtitle {
+  background: var(--secondary-color);
+  font-family: var(--subtitle-font-name);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.card {
+  background: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  background: var(--hover-bg-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
